@@ -283,6 +283,55 @@
         span{
             color: black;
         }
+
+        .my-service{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            
+        }
+        .my-service h2 {
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            margin-top: 20px;
+           
+        }
+        .my-service h2:hover {
+          
+        }
+        .web-design,
+        .UI-design,
+        .app-design {
+           width: 25%;
+           height: 250px;
+          
+           border-radius: 15px;
+           margin-left: 25px;
+           padding: 12px;
+        }
+        h3{
+            font-size: 50px;
+            color: white;
+            padding: 19px;
+            margin-left: 45px;
+        }
+        h3:hover{
+            color: blue;
+            text-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+            transition: ease-in-out;
+            transform: scale(1.1);
+        }
+        .dbox{
+            background-color: gray;
+        }
+        .dbox:hover {
+            background-color: rgb(6, 6, 226);
+            color: white;
+            box-shadow: 2px 2px 5px 3px blue, -2px -2px 5px 3px blue;
+            transform: scale(1.05);
+
+        }
     </style>
 
 </head>
@@ -392,7 +441,22 @@
         </section>
 
 
+        <h3>My Services</h3>
+        <div class="my-service">
+            
+            <div class="web-design dbox">
+                <h2>Web Design</h2>
+                <p>I create visually appealing and user-friendly designs that enhance the user experience.</p>
 
+            </div>
+            <div class="UI-design dbox">
+                <h2>UI Design</h2>
+                <p>I design intuitive user interfaces that are both functional and aesthetically pleasing.</p>
+            </div>
+            <div class="app-design dbox">
+                <h2>App Design</h2>
+            </div>
+        </div>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
