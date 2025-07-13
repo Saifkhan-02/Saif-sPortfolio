@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
             margin: 0;
@@ -22,34 +24,33 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        nav {
+       /* nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 70px;
             background-color: rgb(19, 146, 184);
-        }
+        }*/
 
         .change-theme {
             color: aqua;
         }
 
-        nav ul {
+       /* nav ul {
             display: flex;
             justify-content: center;
 
-        }
+        }*/
 
-        nav ul li {
+       /* nav ul li {
             list-style: none;
             margin: 0 23px;
-        }
+        }*/
 
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 20px;
             position: relative;
             text-shadow: 5px 5px 5px black;
         }
@@ -81,11 +82,11 @@
             margin: 60px 80px;
         }
 
-        .left {
+       /* .left {
             font-size: 28px;
             font-weight: 700;
 
-        }
+        }*/
 
         .left:hover {
             text-shadow: 2px 2px black;
@@ -103,28 +104,27 @@
 
         }
 
-        .leftsection {
+       /* .leftsection {
 
             font-size: 40px;
             margin: 50px 0;
 
-        }
+        }*/
 
-        .left-lowerbox p {
+        /*.left-lowerbox p {
             font-size: 20px;
             margin-top: 20px
-        }
+        }*/
 
-        .cvbox {
+        /*.cvbox {
             padding: 30px;
             margin-left: 80px;
             
-        }
+        }*/
 
         .cv-btn {
             border: 1px solid rgb(27, 12, 229);
             padding: 18px;
-            font-size: 25px;
             font-weight: 800;
             background-color: rgb(22, 200, 200);
             border-radius: 100px;
@@ -133,29 +133,30 @@
         }
 
         .cvbox .cv-btn:hover {
-            font-size: 27px;
+            
             background-color: aquamarine;
             box-shadow: 2px 2px 5px 3px blue, -2px -2px 5px 3px blue;
-            text-shadow: 2px 2px 2px blue;
+            text-shadow: 2px 2px 2px white;
             transform: scale(1.1);
 
         }
 
-        .righttsection img {
+        /*.righttsection img {
             width: 80%;
             margin-top: 50px;
             border-radius: 100%;
-        }
+        }*/
 
         .text-purple {
             color: rgb(171, 45, 183);
-            font-size: 80px;
 
         }
 
         .text-purple:hover {
-            text-shadow: 4px 4px 5px rgb(100, 7, 117), -4px -4px 5px rgb(100, 7, 117);
-            font-size: 90px;
+           /* text-shadow: 4px 4px 5px rgb(100, 7, 117), -4px -4px 5px rgb(100, 7, 117);*/
+           text-shadow: 1px 2px 8px blue, -1px -2px 8px blue ;
+
+            
         }
 
         #element {
@@ -296,16 +297,12 @@
             color: white;
             margin-top: 20px;
            
-        }
-        .my-service h2:hover {
-          
-        }
+        }      
         .web-design,
         .UI-design,
         .app-design {
            width: 25%;
            height: 250px;
-          
            border-radius: 15px;
            margin-left: 25px;
            padding: 12px;
@@ -319,8 +316,7 @@
         h3:hover{
             color: blue;
             text-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
-            transition: ease-in-out;
-            transform: scale(1.1);
+          
         }
         .dbox{
             background-color: gray;
@@ -332,57 +328,91 @@
             transform: scale(1.05);
 
         }
+        .my-project {
+            position: relative;
+            margin-bottom: 50px;
+            border: 2px solid red;
+            padding: 12px;
+            min-height: 900px;
+        }
+        .tat-game{
+            position: absolute;
+            top: 20px;
+            left: 33%;    
+            width: 30%;
+            height: 400px;
+            background-color: gray;
+            padding: 23px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 5px blue, -2px -2px 5px red;
+           
+
+        }
+        .clg-Web{
+            position: absolute;
+            top: 500px;
+            left: 33%;
+            width: 30%;
+            height: 300px;
+            background-color: gray;
+            padding: 23px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 5px blue, -2px -2px 5px red;
+        }
     </style>
 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Saif's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Servies</a></li>
-                    <li><a href="/">Contact Us</a></li>
+    <!--============================= Header Section ===========================-->
+   <div class="w-[100%] mx-auto">
+        <header >
+        <nav class="w-[30%_auto] flex justify-around items-center h-[70px] bg-[dodgerblue]">
+            <div class="sm:text-[28px] text-[10px] font-bold">
+                Saif's Portfolio
+            </div>
+            <div class="">
+                <ul class="flex  ">
+                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Home</a></li>
+                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">About</a></li>
+                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Projects</a></li>
+                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Servies</a></li>
+                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Contact Us</a></li>
 
                 </ul>
-                <!-- <div class="nav-btns">
-                    <i class="ri-sun-line change-theme"></i>
-
-                    <div class="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div> -->
+              
             </div>
         </nav>
     </header>
+   </div>
 
+
+   <!--============================= Home  Section Start ===========================-->
     <main>
-        <section class="firstsection">
-            <div class="leftsection">Hi, My name is <br><span class="text-purple">Saif Khan</span>
-                <div>
+        <section class="flex justify-around sm:m-[85px] m-[25px] grid sm:grid-cols-2 grid-cols-1 ">
+            <div class="leftsection sm:text-[30px] text-[18px] sm:order-1 order-2  border-5">Hi, My name is <br><span class="text-purple sm:text-[70px] text-[28px] sm:hover:text-[90px] hover:text-[40px]">Saif Khan</span>
+                <div class="sm:text-[30px] text-[18px] ">
                     And i am a Passionate <br>
-                    <span id="element"></span>
+                    <span id="element" class="text-[25px]"></span>
                 </div>
-                <div class="left-lowerbox">
-                    <p>
+                <div class="left-lowerbox ">
+                    <p class="text-[18px] mt-[20px]  ">
                         I specialize in creating beautiful, dynamic, and Highly functional websites.
                     </p>
 
                 </div>
-                <div class="cvbox">
-                    <button class="cv-btn">Download CV</button>
+                <div class="cvbox p-[30px] sm:mt-[80px] mt-[0px] grid justify-center">
+                    <button class="cv-btn sm:text-[25px] text-[10px] sm:hover:text-[27px] hover:text-[12px] ">Download CV</button>
                 </div>
             </div>
-            <div class="righttsection">
-                <img src="Image.png" alt="Image can't be show">
+            <div class="righttsection sm:order-2 order-1 grid justify-items-center ">
+                <img src="Image.png" alt="Image can't be show" class="sm:w-[80%] w-[70%] sm:my-[50px] my-[25px] sm:mt-[25px] mt-[0px] rounded-[75%]">
             </div>
 
         </section>
-        <hr>
+         <!--============================= Home  Section End ===========================-->
+         <hr>
+         <!--
         <h1>About Me</h1>
         <section class="about-section">
             <div id="about">
@@ -457,6 +487,13 @@
                 <h2>App Design</h2>
             </div>
         </div>
+
+        <h3>My Projects</h3>
+        <div class="my-project">
+            <div class="tat-game"></div>
+            <div class="clg-Web"></div>
+        </div>
+         -->
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
