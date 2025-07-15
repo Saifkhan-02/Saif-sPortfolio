@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         * {
@@ -24,7 +24,7 @@
             font-family: 'Poppins', sans-serif;
         }
 
-       /* nav {
+        /* nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -36,13 +36,13 @@
             color: aqua;
         }
 
-       /* nav ul {
+        /* nav ul {
             display: flex;
             justify-content: center;
 
         }*/
 
-       /* nav ul li {
+        /* nav ul li {
             list-style: none;
             margin: 0 23px;
         }*/
@@ -82,7 +82,7 @@
             margin: 60px 80px;
         }
 
-       /* .left {
+        /* .left {
             font-size: 28px;
             font-weight: 700;
 
@@ -104,7 +104,7 @@
 
         }
 
-       /* .leftsection {
+        /* .leftsection {
 
             font-size: 40px;
             margin: 50px 0;
@@ -133,12 +133,10 @@
         }
 
         .cvbox .cv-btn:hover {
-            
             background-color: aquamarine;
             box-shadow: 2px 2px 5px 3px blue, -2px -2px 5px 3px blue;
-            text-shadow: 2px 2px 2px white;
-            transform: scale(1.1);
-
+            text-shadow: 2px 2px 2px white, -2px -2px 2px white;
+            transform: scale(0.9);
         }
 
         /*.righttsection img {
@@ -150,13 +148,15 @@
         .text-purple {
             color: rgb(171, 45, 183);
 
+
         }
 
         .text-purple:hover {
-           /* text-shadow: 4px 4px 5px rgb(100, 7, 117), -4px -4px 5px rgb(100, 7, 117);*/
-           text-shadow: 1px 2px 8px blue, -1px -2px 8px blue ;
+            /* text-shadow: 4px 4px 5px rgb(100, 7, 117), -4px -4px 5px rgb(100, 7, 117);*/
+            text-shadow: 1px 2px 8px blue, -1px -2px 8px blue;
 
-            
+
+
         }
 
         #element {
@@ -185,7 +185,7 @@
 
         }*/
 
-        .about-section {
+        /* .about-section {
             display: flex;
             width: 40%;
             height: 500px;
@@ -197,7 +197,7 @@
             justify-content: center;
             align-items: center;
 
-        }
+        }*/
 
         h1 {
             text-align: center;
@@ -271,7 +271,7 @@
             position: absolute;
             top: 40px;
             border-radius: 14px;
-            
+
         }
 
         .wrk-sec-box p {
@@ -281,46 +281,53 @@
             text-align: center;
             line-height: 40px;
         }
-        span{
+
+        span {
             color: black;
         }
 
-        .my-service{
+        .my-service {
             display: flex;
             justify-content: center;
             gap: 50px;
-            
+
         }
+
         .my-service h2 {
             text-align: center;
             font-size: 30px;
             color: white;
             margin-top: 20px;
-           
-        }      
+
+        }
+
         .web-design,
         .UI-design,
         .app-design {
-           width: 25%;
-           height: 250px;
-           border-radius: 15px;
-           margin-left: 25px;
-           padding: 12px;
+            width: 25%;
+            height: 250px;
+            border-radius: 15px;
+            margin-left: 25px;
+            padding: 12px;
         }
-        h3{
+
+        h3 {
             font-size: 50px;
             color: white;
             padding: 19px;
             margin-left: 45px;
         }
-        h3:hover{
+
+        h3:hover {
             color: blue;
             text-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
-          
+
         }
-        .dbox{
+
+        .dbox {
             background-color: gray;
         }
+
         .dbox:hover {
             background-color: rgb(6, 6, 226);
             color: white;
@@ -328,6 +335,7 @@
             transform: scale(1.05);
 
         }
+
         .my-project {
             position: relative;
             margin-bottom: 50px;
@@ -335,20 +343,22 @@
             padding: 12px;
             min-height: 900px;
         }
-        .tat-game{
+
+        .tat-game {
             position: absolute;
             top: 20px;
-            left: 33%;    
+            left: 33%;
             width: 30%;
             height: 400px;
             background-color: gray;
             padding: 23px;
             border-radius: 12px;
             box-shadow: 2px 2px 5px blue, -2px -2px 5px red;
-           
+
 
         }
-        .clg-Web{
+
+        .clg-Web {
             position: absolute;
             top: 500px;
             left: 33%;
@@ -359,38 +369,46 @@
             border-radius: 12px;
             box-shadow: 2px 2px 5px blue, -2px -2px 5px red;
         }
+        
+   
     </style>
 
 </head>
 
 <body>
     <!--============================= Header Section ===========================-->
-   <div class="w-[100%] mx-auto">
-        <header >
-        <nav class="w-[30%_auto] flex justify-around items-center h-[70px] bg-[dodgerblue]">
-            <div class="sm:text-[28px] text-[10px] font-bold">
-                Saif's Portfolio
-            </div>
-            <div class="">
-                <ul class="flex  ">
-                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Home</a></li>
-                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">About</a></li>
-                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Projects</a></li>
-                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Servies</a></li>
-                    <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Contact Us</a></li>
+    <div class="w-[100%] mx-auto">
+        <header>
+            <nav class="w-[30%_auto] flex justify-around items-center h-[70px] bg-[dodgerblue]">
+                <div class="sm:text-[28px] text-[10px] font-bold">
+                    Saif's Portfolio
+                </div>
+                <div class="">
+                    <ul class="flex  ">
+                        <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Home</a></li>
+                        <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">About</a></li>
+                        <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Projects</a>
+                        </li>
+                        <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Servies</a>
+                        </li>
+                        <li class="sm:ml-[29px] ml-[7px]"><a href="/" class="sm:text-[22px] text-[10px]">Contact Us</a>
+                        </li>
 
-                </ul>
-              
-            </div>
-        </nav>
-    </header>
-   </div>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+    </div>
 
 
-   <!--============================= Home  Section Start ===========================-->
+    <!--============================= Home  Section Start ===========================-->
     <main>
         <section class="flex justify-around sm:m-[85px] m-[25px] grid sm:grid-cols-2 grid-cols-1 ">
-            <div class="leftsection sm:text-[30px] text-[18px] sm:order-1 order-2  border-5">Hi, My name is <br><span class="text-purple sm:text-[70px] text-[28px] sm:hover:text-[90px] hover:text-[40px]">Saif Khan</span>
+            <div class="leftsection sm:text-[30px] text-[18px] sm:order-1 order-2 sm:ml-[130px] ml-[40px]">Hi, My name
+                is <br>
+                <span class="text-purple sm:text-[70px] text-[28px]  sm:hover:text-[85px] hover:text-[35px]">Saif
+                    Khan</span>
                 <div class="sm:text-[30px] text-[18px] ">
                     And i am a Passionate <br>
                     <span id="element" class="text-[25px]"></span>
@@ -401,32 +419,40 @@
                     </p>
 
                 </div>
-                <div class="cvbox p-[30px] sm:mt-[80px] mt-[0px] grid justify-center">
-                    <button class="cv-btn sm:text-[25px] text-[10px] sm:hover:text-[27px] hover:text-[12px] ">Download CV</button>
+                <div class="cvbox p-[30px] sm:mt-[80px] mt-[0px] mr-[40px] grid justify-center  ">
+                    <button class="cv-btn  sm:text-[25px] text-[10px]  ">Download CV</button>
                 </div>
             </div>
             <div class="righttsection sm:order-2 order-1 grid justify-items-center ">
-                <img src="Image.png" alt="Image can't be show" class="sm:w-[80%] w-[70%] sm:my-[50px] my-[25px] sm:mt-[25px] mt-[0px] rounded-[75%]">
+                <img src="Image.png" alt="Image can't be show"
+                    class="sm:w-[80%] w-[70%] sm:my-[50px] my-[25px] sm:mt-[25px] mt-[0px] rounded-[75%]">
             </div>
 
         </section>
-         <!--============================= Home  Section End ===========================-->
-         <hr>
-         <!--
-        <h1>About Me</h1>
-        <section class="about-section">
-            <div id="about">
-                <p>Hello, I'm a passionate and dedicated Web Developer with a strong in HTML, CSS, JavaScript, and
-                    modern frameworks like React, I bring fresh ideas, a curious mind, and a strong willingness to learn
-                    and
-                    grow in this ever-evolving tech world. I enjoy building responsive and user-friendly websites that
-                    not
-                    only look good but also perform well across all devices.</p>
+        <!--============================= Home  Section End ===========================-->
+        <hr>
+        <!--============================= About Section Start ===========================-->
+
+
+        <section class=" sm:w-[50%] w-[75%] mx-auto">
+            <div class=" about-section sm:pb-[40px] pb-[20px] border-2 rounded-[18px] bg-purple-600 border-2 border-transparent rounded p-1
+            hover:border-transparent hover:bg-gradient-to-r from-blue-700 via-purple-700 to-purple-800  hover:shadow-[inset_0_0_20px_4px_rgba(255,255,255,0.8)] hover:scale-105 transition duration-300">
+                <div class= "abm underline w-[60%]  sm:text-[78px] text-[29px] text-center font-bold sm:py-[12px] py-[6px] ml-[20%] rounded-[23px] ">
+                    About Me
+                </div>
+                <div class="sm:p-[30px] p-[12px] sm:mx-[89px] mx-[18px]  pb-[12px] border-2 rounded-[23px] ">
+                    <p
+                        class="sm:text-[28px]  text-[14px]  sm:leading-[50px] leading-[18px] leading-[17px] sm:tracking-wide">
+                        Hello, I'm a passionate and dedicated Web Developer with a strong in HTML, CSS, JavaScript, and
+                        modern frameworks like React, I bring fresh ideas, a curious mind, and a strong willingness to
+                        learn and grow in this ever-evolving tech world. I enjoy building responsive and user-friendly
+                        websites that not only look good but also perform well across all devices.</p>
+                </div>
             </div>
 
         </section>
-
-
+        <!--============================= About  Section End ===========================-->
+        <!--
         <h1>Work Experience</h1>
         <section class="work-Section">
             <div class="wrk-sec-box">
