@@ -210,12 +210,7 @@
 
         }
 
-        #about p {
-            padding: 15px;
-            font-size: 20px;
-            color: blue;
-
-        }
+    
 
         .work-Section {
             position: relative;
@@ -369,7 +364,37 @@
             border-radius: 12px;
             box-shadow: 2px 2px 5px blue, -2px -2px 5px red;
         }
-        
+        .bd-animate{
+            position: relative;
+            display: flex;
+            overflow: hidden;
+        }
+        .bd-animate::before{
+            content: '';
+            position: absolute;
+            margin-top:-165px;
+            margin-left: 165px;
+            width: 123px;
+            background-image: linear-gradient(180deg, rgb(255, 0, 0), rgb(255, 0, 208));
+            height: 180%;
+            animation: rotBGimg 3s linear infinite;
+            transition: all 0.2s linear;
+            z-index: -1;
+
+        }
+        @keyframes rotBGimg {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+            
+        }
+        .bd-animate::after{
+            content: "";
+            position: absolute;
+            background-color: black;
+            inset: 8px;
+            border-radius: 14px;
+            z-index: -1;
+        }
    
     </style>
 
@@ -434,15 +459,16 @@
         <!--============================= About Section Start ===========================-->
 
 
-        <section class=" sm:w-[50%] w-[75%] mx-auto">
-            <div class=" about-section sm:pb-[40px] pb-[20px] border-2 rounded-[18px] bg-purple-600 border-2 border-transparent rounded p-1
-            hover:border-transparent hover:bg-gradient-to-r from-blue-700 via-purple-700 to-purple-800  hover:shadow-[inset_0_0_20px_4px_rgba(255,255,255,0.8)] hover:scale-105 transition duration-300">
+        <section class=" sm:w-[50%] w-[75%] mx-auto pb-[23px]">
+            <div class=" about-section sm:pb-[40px] pb-[20px] rounded-[18px] bg-purple-600 border-transparent rounded p-1
+            hover:border-transparent hover:bg-gradient-to-r from-blue-700 via-purple-700 to-purple-800  hover:shadow-[0_0_20px_4px_rgba(120,150,250,0.8)] hover:scale-105 transition duration-300 hover:text-black">
                 <div class= "abm underline w-[60%]  sm:text-[78px] text-[29px] text-center font-bold sm:py-[12px] py-[6px] ml-[20%] rounded-[23px] ">
                     About Me
                 </div>
-                <div class="sm:p-[30px] p-[12px] sm:mx-[89px] mx-[18px]  pb-[12px] border-2 rounded-[23px] ">
+                <div class="bd-animate sm:p-[30px] p-[12px] sm:mx-[89px] mx-[18px]  pb-[12px] border-2 border-none  rounded-tr-[23px] hover:rounded-tr-none hover:rounded-tl-[23px] rounded-bl-[23px] hover:rounded-bl-none hover:rounded-br-[23px]
+                 ">
                     <p
-                        class="sm:text-[28px]  text-[14px]  sm:leading-[50px] leading-[18px] leading-[17px] sm:tracking-wide">
+                        class="sm:text-[24px]  text-[16px]  sm:leading-[40px] leading-[21px]  sm:tracking-wide hover:text-white">
                         Hello, I'm a passionate and dedicated Web Developer with a strong in HTML, CSS, JavaScript, and
                         modern frameworks like React, I bring fresh ideas, a curious mind, and a strong willingness to
                         learn and grow in this ever-evolving tech world. I enjoy building responsive and user-friendly
