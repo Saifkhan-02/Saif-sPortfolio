@@ -210,7 +210,7 @@
 
         }
 
-    
+
 
         .work-Section {
             position: relative;
@@ -364,38 +364,138 @@
             border-radius: 12px;
             box-shadow: 2px 2px 5px blue, -2px -2px 5px red;
         }
-        .bd-animate{
+
+        .bd-animate {
             position: relative;
             display: flex;
             overflow: hidden;
         }
-        .bd-animate::before{
+
+        .bd-animate::before {
             content: '';
             position: absolute;
-            margin-top:-165px;
+            margin-top: -165px;
             margin-left: 165px;
             width: 123px;
-            background-image: linear-gradient(180deg, rgb(255, 0, 0), rgb(255, 0, 208));
+            background-image: linear-gradient(180deg, rgb(255, 0, 0), rgb(0, 200, 255));
             height: 180%;
             animation: rotBGimg 3s linear infinite;
             transition: all 0.2s linear;
             z-index: -1;
 
         }
-        @keyframes rotBGimg {
+
+        /*@keyframes rotBGimg {
             from{transform: rotate(0deg);}
             to{transform: rotate(360deg);}
             
-        }
-        .bd-animate::after{
+        }*/
+        .bd-animate::after {
             content: "";
             position: absolute;
             background-color: black;
-            inset: 8px;
+            inset: 7px;
             border-radius: 14px;
             z-index: -1;
         }
-   
+
+        .animations {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        .animations::before {
+            content: '';
+            position: absolute;
+            margin-top: -145px;
+            margin-left: 110px;
+            background-image: linear-gradient(180deg, rgb(255, 0, 0), rgb(0, 200, 255));
+            height: 180%;
+            animation: rotBGimg 3s linear infinite;
+            transition: all 0.2s linear;
+
+        }
+
+        @keyframes rotBGimg {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .animations::after {
+            content: '';
+            position: absolute;
+            inset: 7px;
+
+
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+
+        }
+
+        span::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+
+            background: #50dfdb;
+            animation: animate 3s linear infinite;
+
+        }
+
+        span:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        span:nth-child(2) {
+            transform: rotate(90deg);
+        }
+
+        span:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        span:nth-child(4) {
+            transform: rotate(270deg);
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scale(0);
+                transform-origin: left;
+            }
+
+            50% {
+                transform: scale(1);
+                transform-origin: left;
+            }
+
+            50.1% {
+                transform: scale(0);
+                transform-origin: right;
+            }
+
+            100% {
+                transform: scale(1);
+                transform-origin: right;
+            }
+        }
     </style>
 
 </head>
@@ -460,15 +560,18 @@
 
 
         <section class=" sm:w-[50%] w-[75%] mx-auto pb-[23px]">
-            <div class=" about-section sm:pb-[40px] pb-[20px] rounded-[18px] bg-purple-600 border-transparent rounded p-1
+            <div
+                class=" sm:pb-[40px] pb-[50px] rounded-[18px] bg-purple-600 border-transparent
             hover:border-transparent hover:bg-gradient-to-r from-blue-700 via-purple-700 to-purple-800  hover:shadow-[0_0_20px_4px_rgba(120,150,250,0.8)] hover:scale-105 transition duration-300 hover:text-black">
-                <div class= "abm underline w-[60%]  sm:text-[78px] text-[29px] text-center font-bold sm:py-[12px] py-[6px] ml-[20%] rounded-[23px] ">
+                <div
+                    class="abm underline w-[60%]  sm:text-[78px] text-[29px] text-center font-bold sm:py-[12px] py-[6px] ml-[20%] rounded-[23px] ">
                     About Me
                 </div>
-                <div class="bd-animate sm:p-[30px] p-[12px] sm:mx-[89px] mx-[18px]  pb-[12px] border-2 border-none  rounded-tr-[23px] hover:rounded-tr-none hover:rounded-tl-[23px] rounded-bl-[23px] hover:rounded-bl-none hover:rounded-br-[23px]
+                <div class="bd-animate sm:p-[30px] p-[12px] sm:mx-[89px] mx-[18px]  pb-[12px] border-2 border-none  
+                rounded-tr-[23px] hover:rounded-tr-none rounded-bl-[23px] hover:rounded-bl-none  hover:rounded-tl-[23px] hover:rounded-br-[23px]
                  ">
                     <p
-                        class="sm:text-[24px]  text-[16px]  sm:leading-[40px] leading-[21px]  sm:tracking-wide hover:text-white">
+                        class="sm:text-[24px] text-[16px] p-[18px]  sm:leading-[40px] leading-[21px]  sm:tracking-wide hover:text-white">
                         Hello, I'm a passionate and dedicated Web Developer with a strong in HTML, CSS, JavaScript, and
                         modern frameworks like React, I bring fresh ideas, a curious mind, and a strong willingness to
                         learn and grow in this ever-evolving tech world. I enjoy building responsive and user-friendly
@@ -477,6 +580,120 @@
             </div>
 
         </section>
+        <hr>
+        <!-- <section class=" sm:w-[50%] w-[75%] mx-auto pb-[23px]">
+            <div class="sm:pb-[40px] pb-[20px] bg-purple-600 px-[95px] rounded-[18px] -z-50">
+                <div class="sm:text-[78px] text-[29px] text-center underline font-bold sm:py-[12px] py-[6px] ">
+                    Skills
+                </div>
+                <div class="animations  p-[34px] ">
+                   <div class="py-[18px]">
+                         <h1 class="text-blue-700 text-[50px]  grid justify-start ml-[23px] font-bold">UI/UX:</h1>
+                        <p class="ml-[25px] text-[32px]">Designing Web/App.</p>
+                    </div>
+                    <div class="py-[18px]">
+                        <h1 class="text-blue-700 text-[45px] grid justify-start ml-[23px] font-bold">Web Development:</h1>
+                        <p class="ml-[25px] text-[32px]">Web App Development.</p>
+                    </div>
+                    <div class="py-[18px]">
+                        <h1 class="text-blue-700 text-[45px]  grid justify-start ml-[23px] font-bold">App Development:</h1>
+                        <p class="ml-[25px] text-[32px]">Building Android/IOS apps.</p>
+                    </div>
+                   
+                </div>
+
+        </section> -->
+
+        <section>
+            <div
+                class="relative w-[285px] sm:w-[620px] h-[330px] sm:h-[620px] bg-[url()]  border-[#051682] shadow-[0px_0px_30px_#051682] m-[5%_auto] flex justify-center items-center rounded-[12px]">
+                <div
+                    class="absolute  sm:w-[550px] w-[260px] sm:h-[550px] h-[260px] text-[center] border-[#051682] sm:p-[12px] p-[12px] bg-[#111845a6] ">
+                    <h2 class="text-[#50dfdb] text-[27px] sm:text-[58px] font-bold text-center"> Skills </h2>
+                    <span class="before:h-[3px] sm:before:h-[4px]"></span>
+                    <span class="before:h-[3px] sm:before:h-[4px]"></span>
+                    <span class="before:h-[3px] sm:before:h-[4px]"></span>
+                    <span class="before:h-[3px] sm:before:h-[4px]"></span>
+                    <div
+                        class="absolute top-[20%] sm:top-[20%] left-[7%] sm:left-[10%] right-[7%] sm:right-[10%] bottom-[7%] sm:bottom-[10%] border-2 border-red-500 p-[10px] sm:p-[20px] rounded-[12px]">
+
+                        <div class="my-[11px]">
+                            <h1 class="text-blue-300 text-[26px] sm:text-[39px] font-bold ml-[12px] sm:ml-[23px]  ">
+                                UI/UX:</h1>
+                            <p class=" text-[13px] sm:text-[20px] ml-[12px] sm:ml-[23px] font-bold">Designing Web/App.
+                            </p>
+                        </div>
+                        <div class="my-[19px]">
+                            <h1 class="text-blue-300 text-[26px] sm:text-[36px] font-bold ml-[12px] sm:ml-[23px]  ">
+                                UI/UX:</h1>
+                            <p class=" text-[13px] sm:text-[20px] ml-[12px] sm:ml-[23px] font-bold">Designing Web/App.
+                            </p>
+                        </div>
+                        <div class="my-[11px]">
+                            <h1 class="text-blue-300 text-[26px] sm:text-[36px] font-bold ml-[12px] sm:ml-[23px]  ">
+                                UI/UX:</h1>
+                            <p class=" text-[13px] sm:text-[20px] ml-[12px] sm:ml-[23px] font-bold">Designing Web/App.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class=" sm:w-[50%] w-[75%] mx-auto pb-[23px]">
+            <div
+                class=" sm:pb-[40px] pb-[20px] rounded-[18px] bg-purple-600 border-transparent
+            hover:border-transparent hover:bg-gradient-to-r from-blue-700 via-purple-700 to-purple-800  hover:shadow-[0_0_20px_4px_rgba(120,150,250,0.8)] hover:scale-105 transition duration-300 hover:text-black">
+                <div
+                    class="abm underline w-[60%]  sm:text-[78px] text-[29px] text-center font-bold sm:py-[12px] py-[6px] ml-[20%] rounded-[23px] ">
+                    Experience
+                </div>
+                <div class="bd-animate sm:p-[30px] p-[12px] sm:mx-[89px] mx-[18px]  pb-[12px] border-2 border-none  
+                rounded-tr-[23px] hover:rounded-tr-none rounded-bl-[23px] hover:rounded-bl-none  hover:rounded-tl-[23px] hover:rounded-br-[23px]
+                 ">
+                    <p
+                        class="sm:text-[24px] text-[16px] p-[18px]  sm:leading-[40px] leading-[21px]  sm:tracking-wide hover:text-white">
+                        Hello, I'm a passionate and dedicated Web Developer with a strong in HTML, CSS, JavaScript, and
+                        modern frameworks like React, I bring fresh ideas, a curious mind, and a strong willingness to
+                        learn and grow in this ever-evolving tech world. I enjoy building responsive and user-friendly
+                        websites that not only look good but also perform well across all devices.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+        <section class=" sm:w-[50%] w-[75%] mx-auto pb-[23px]">
+            <div
+                class=" sm:pb-[40px] pb-[20px] rounded-[18px] bg-purple-600 border-transparent
+            hover:border-transparent hover:bg-gradient-to-r from-blue-700 via-purple-700 to-purple-800  hover:shadow-[0_0_20px_4px_rgba(120,150,250,0.8)] hover:scale-105 transition duration-300 hover:text-black">
+                <div
+                    class="abm underline w-[60%]  sm:text-[78px] text-[29px] text-center font-bold sm:py-[12px] py-[6px] ml-[20%] rounded-[23px] ">
+                    Education
+                </div>
+                <div class="bd-animate sm:p-[30px] p-[12px] sm:mx-[89px] mx-[18px]  pb-[12px] border-2 border-none  
+                rounded-tr-[23px] hover:rounded-tr-none rounded-bl-[23px] hover:rounded-bl-none  hover:rounded-tl-[23px] hover:rounded-br-[23px]
+                 ">
+                    <p
+                        class="sm:text-[24px] text-[16px] p-[18px]  sm:leading-[40px] leading-[21px]  sm:tracking-wide hover:text-white">
+                        Hello, I'm a passionate and dedicated Web Developer with a strong in HTML, CSS, JavaScript, and
+                        modern frameworks like React, I bring fresh ideas, a curious mind, and a strong willingness to
+                        learn and grow in this ever-evolving tech world. I enjoy building responsive and user-friendly
+                        websites that not only look good but also perform well across all devices.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="w-[100%] mx-auto border-2 p-[18px] sm:p-[50px]">
+            <div class="flex justify-center gap-[20px] sm:gap-[50px] ">
+                <div class="border-2 bg-[red] w-[32%] sm:w-[30%] h-[120px] sm:h-[300px] ">Web Design</div>
+                <div class="border-2 bg-[red] w-[32%] sm:w-[30%] h-[120px] sm:h-[300px] ">UI/UX Design</div>
+                <div class="border-2 bg-[red] w-[32%] sm:w-[30%] h-[120px] sm:h-[300px] ">App Design</div>
+            </div>
+        </section>
+
         <!--============================= About  Section End ===========================-->
         <!--
         <h1>Work Experience</h1>
